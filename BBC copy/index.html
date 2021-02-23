@@ -1,0 +1,281 @@
+<html>
+	<head>
+		<title>BBC News</title>
+		
+		<style type="text/css">
+			<!-- -->
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center, dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+										margin: 0;
+										padding: 0;
+										border: 0;
+										font-size: 100%;
+										font: inherit;
+										vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			<!-- -->
+		
+			a {
+				text-decoration:none;
+			}
+			a:hover {
+				border-bottom: 2px solid #1188BB;
+			}
+			
+			#first-section {
+				width:100%;
+				height:40px;
+				border-top: 1px solid #CCCCCC;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			#bbc-logo {
+				height:33px;
+				margin: 0px 5px 10px 462px;
+				padding-top:8px;
+				padding-right:5px;
+				float:left;
+			}
+			#sign-button {
+				width: 100px;
+				height:29px;
+				margin: 0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:50px;
+			}
+			#sign-button:hover {
+				border-bottom: 5px solid #1188BB;
+			}
+			
+			#news-button {
+				width: 60px;
+				height:29px;
+				margin: 0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			#news-button:hover {
+				border-bottom: 5px solid #992211;
+			}
+			#sport-button {
+				width:60px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:14px;
+			}
+			#weather-button {
+				width:80px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			#iplayer-button{
+				width:80px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			#tv-button{
+				width:60px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			#radio-button{
+				width:60px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			#more-button{
+				width:60px;
+				height:29px;
+				margin:0px 5px 0px 0px;
+				float:left;
+				padding-top:12px;
+				padding-left:20px;
+			}
+			.top-buttons-border {
+				border-right: 2px solid #CCCCCC;
+				font-weight:bold;
+				font-family:"Arial";
+				font-family:"Arial";
+			}
+			.top-buttons {
+				font-size:16px;
+				color:#333333;
+			}
+			#second-section {
+				width:100%;
+				background-color:#BB1919;
+				height:50px;
+			}
+			#third-section {
+				background-color: #A91717;
+				width:100%;
+				height:30px;
+				padding-left:452px;
+			}
+			
+			
+			.lower-menu-buttons{
+				font-size:16px;
+				color: white;
+				float:left;
+				padding: 5px 8px 5px 5px;
+				
+			}
+			.lower-menu-buttons:hover{
+				border-bottom: 3px solid white;
+				cursor:pointer;
+			}
+			.lower-menu-buttons-border {
+				border-right: 1px solid white;
+			}
+			#fourth-section{
+				margin-left:456px;
+				height:auto;
+				width: 1080px;
+				float:left;
+			}
+			.header{
+				margin-top:10px;
+				font-size:26px;
+				font-color:#BCBCBE;
+				
+			}
+			.header span{
+				border-bottom: 3px solid #A61B1B;
+			}
+			.content{
+				width:100%;
+				font-size:26px;
+				font-weight:bold;
+				float:left;
+			}
+			#fourth-section h1 {
+				margin-top:30px;
+				font-size:30px;
+			}
+			.content-text {
+				font-weight:normal;
+				margin-top: 20px;
+				width:30%;
+				font-size:14px;
+				text-align:justify;
+			}
+			.content-link {
+				width:70%;
+				float:left;
+			}
+			.content-link a img{
+				width:50%;
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div id="first-section" class="remove-left-right-margin">
+			
+			<div id="bbc-logo" class="top-buttons-border">
+				<img src="http://completewebdevelopercourse.com/clone/index_files/bbc-blocks-dark.png">
+			</div>
+			<div id="sign-button" class="top-buttons-border"><span class="top-buttons">Sing in</span></div>
+			<div id="news-button" class="top-buttons-border"><span class="top-buttons">News</span></div>
+			<div id="sport-button" class="top-buttons-border"><span>Sport</span></div>
+			<div id="weather-button" class="top-buttons-border"><span>Weather</span></div>
+			<div id="iplayer-button" class="top-buttons-border"><span>IPlayer</span></div>
+			<div id="tv-button" class="top-buttons-border"><span>TV</span></div>
+			<div id="radio-button" class="top-buttons-border"><span>Radio</span></div>
+			<div id="more-button" class="top-buttons-border"><span>More</span></div>
+			<div class="top-buttons-border"><span><input type="text" placeholder="Search"></span></div>
+		</div>
+		
+		
+		<div id="second-section" class="remove-left-right-margin">
+		
+		</div>
+		<div id="third-section" class="remove-left-right-margin">
+		
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Home</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">UK</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">World</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Business</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Politics</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Tech</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Science</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Health</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Education</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Entertainment & Arts</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">Video & Audio</span></div>
+			
+			<div><span class="lower-menu-buttons lower-menu-buttons-border">More</span></div>
+			
+		</div>
+		<div id="fourth-section">
+			<div class="header"><span>Technology</span></div>
+			<div class="content">
+				<h1>Asda bug exposed payment details</h1>
+				<div class="content-text">Security vulnerabilities that put customers at risk have affected Asda's website for a couple of  years, a security expert has revealed.</div>
+				<div class="content-link"><a href="http://www.bbc.co.uk/news/technology-35350789"><img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F134/production/_87784716_asda.gif"></a></div>
+			</div>
+		</div>
+		
+	</body>
+</html>
