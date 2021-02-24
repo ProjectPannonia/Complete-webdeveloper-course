@@ -18,15 +18,34 @@
         
         <p>
             
-            <input id="textField" type="text">
+            <input id="tipField" id="textField" type="text">
         
-            <input id="checkButton" type="button">
+            <input id="checkButton" type="button" value="Click me!">
         
         </p>
         
         <script type="text/javascript">
         
-        
+            
+            
+            document.getElementById("checkButton").onclick = function() {
+                
+                var randomNumber = Math.floor(Math.random() * 5) +1;
+                var userTipNumber = document.getElementById("tipField").value;
+                
+                console.log(randomNumber);
+                
+                if(randomNumber == userTipNumber) {
+                    
+                    alert("Nice job!");
+                    
+                } else {
+                    
+                    alert("Nope! The number was " + randomNumber);
+                    
+                }
+                
+            }
         
         </script>
     
