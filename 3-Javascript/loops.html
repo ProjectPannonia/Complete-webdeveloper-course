@@ -12,8 +12,23 @@
     </head>
 
     <body>
-    
         
+        <div id = "container">
+        
+        
+        </div>
+        
+        <script type="text/javascript">
+            
+            var tweets = ["Hi! Everyone!", "I love cornflakes", "Night night:)", "Sweet dreams!"];
+            
+            for(var i = 0; i < tweets.length; i++) {
+                
+                document.getElementById("container").innerHTML = document.getElementById("container").innerHTML + "<p>" + tweets[i] +"</p>";
+                
+            }
+        
+        </script>
     
     </body>
     
