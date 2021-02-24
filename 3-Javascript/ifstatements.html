@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+    
+        <title>If statements</title>
+    
+        <style type="text/css">
+        
+        
+        
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <form>
+        
+            <input id="usernameField" type="text">
+            
+            <input id="passwordField" type="password">
+            
+            <input id="loginButton" type="button" value="Log me in">
+        
+        </form>
+    
+        <script type="text/javascript">
+            
+            document.getElementById("loginButton").onclick = function() {
+                
+                var typedUsername = document.getElementById("usernameField").value;
+                var typedPassword = document.getElementById("passwordField").value;
+                
+                if(typedUsername == "adam" && typedPassword == "bab") {
+                    
+                    alert("Successfully logged in!");
+                    
+                } else {
+                    
+                    alert("Incorrect username/password");
+                    
+                }
+                
+            }
+            /*
+            var x = 1;
+            
+            if (x == 1) {
+                
+                alert("x is 1!!");   
+            
+            } else {
+                
+                alert("x is not 1!!");
+                
+            }
+            */
+        </script>
+    
+    </body>
+    
+</html>
