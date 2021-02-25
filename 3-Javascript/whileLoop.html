@@ -14,12 +14,106 @@
     
     <body>
     
+        <p>How many fingers are you holding up?</p>
         
+        <p><input id="myNumber" type="text"></p>
+        
+        <button id="guess">Guess!</button>
         
         <script type="text/javascript">
-        
-        
-        
+            
+            function doAGuess(correctAnswer) {
+                
+                var randomNumber = 0;
+                
+                var guessCounter = 0;
+                
+                while(randomNumber != correctAnswer) {
+                    
+                    randomNumber = Math.floor(Math.random() * 5) + 1;
+                    
+                    guessCounter++;
+                    
+                }
+            
+                alert("Got it! It was a " + correctAnswer + ". It took me " + guessCounter + " guesses");
+                
+            }
+            
+            doAGuess(4);
+            
+            document.getElementById("guess").onclick = function() {
+                
+                var myNumber = document.getElementById("myNumber").value;
+            
+                if(myNumber > 0 && myNumber < 6) {
+
+                    var gotIt = false;
+
+                    var numberOfGuesses = 1;
+
+                    while(gotIt == false) {
+
+                        var guess = Math.floor(Math.random() * 5) + 1;
+
+                        if(guess == myNumber) {
+
+                            // Computer is correct
+
+                            gotIt = true;
+
+                            alert("Got it! It was a " + myNumber + ". It took me " + numberOfGuesses + " guesses");
+
+                        } else {
+
+                            numberOfGuesses++;
+
+                        }
+
+                    }
+
+                } else {
+
+                    alert("Invalid number: " + myNumber + ", please choose a correct number in a range of 1-5.");
+
+                }
+                
+            }
+            
+            
+            
+            
+        /*
+        var tweets = ["Hi everyone!", "I love cornflakes", "Night night", "Sweet dreams"];
+            
+            var i = 0;
+            
+            while(i < tweets.length) {
+                
+                console.log(tweets[i]);
+                
+                i++;
+                
+            }
+        */
+            
+           /*
+            var randomNumber = Math.floor(Math.random()*5)+1;
+            
+            var counter = 0;
+            var tip = 0;
+            
+            while(tip != randomNumber) {
+                tip = Math.floor(Math.random()*5)+1;
+                console.log(tip);
+                counter++;    
+            }
+            
+            alert("Guessed in: " + counter + "tips!");
+            */
+            
+            
+            
         </script>
     
     </body>
