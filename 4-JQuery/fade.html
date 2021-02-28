@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+    
+        <style type="text/css">
+        
+        
+        
+        </style>
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!-- 
+        <div id="circle"></div>
+        
+        <div class="square"></div>
+        
+        <div class="square"></div>
+        
+        <p>This is some text</p>
+        
+        <input type="button" value="Fade out">
+        
+        <p class="hidedText">Unhided text</p>
+        
+        <input id="unhide" type="button" value="Fade in">
+        -->
+        
+        <p id="toggledText">This is some text</p>
+        
+        <input id="toggleButton" type="button" value="Toggle text">
+        
+        <script type="text/javascript">
+            
+            $("#toggleButton").click(function() {
+                
+                if($("#toggledText").css("display") == "none") {
+                    $("#toggledText").fadeIn();
+                    //$("#toggledText").css("display", "none");
+                } else {
+                    $("#toggledText").fadeOut();
+                    //$("#toggledText").css("display", "block");
+                }
+                
+            });
+            
+            /*
+            $("#unhide").click(function() {
+                
+               $(".hidedText").fadeIn(); 
+                
+            });
+        
+            
+            $("div").click(function() {
+                
+                $(this).fadeOut();
+                
+            });
+            
+            $("div").click(function() {
+                
+                $(this).fadeOut("slow", function() {
+                    alert("FadeOut has finished"); 
+                });
+                
+            });
+            
+            
+            $("input").click(function() {
+                
+               $("p").fadeOut("slow"); 
+                
+            });
+            */
+        
+        </script>
+    
+    </body>
+    
+</html>

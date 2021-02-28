@@ -1,0 +1,67 @@
+<html>
+
+    <head>
+    
+        <style type="text/css">
+        
+        .square {
+                
+                width: 200px;
+                height: 200px;
+                float: right;
+                margin: 20px;
+                background-color:yellow;
+                
+            }
+            
+            #circle {
+                
+                width: 200px;
+                height: 200px;
+                float: left;
+                margin: 20px;
+                border-radius: 50%;
+                background-color: green;
+                
+            }
+            
+            .red {
+                
+                background-color: red;     
+                
+            }
+        
+        </style>
+    
+        <script type="text/javascript" src="jquery.min.js"></script>
+        
+    </head>
+    
+    <body>
+    
+        <div id="circle"></div>
+    
+        <div class="square"></div>
+        
+        <div class="square"></div>
+        
+        <script type="text/javascript">
+        
+            $("#circle").click(function() {
+               
+                $("#circle").css("width","400px");
+                $("#circle").css("background-color","red");
+                alert($("body").css("width"));
+                
+            });
+            
+            $(".square").click(function() {
+               
+                $(this).css("display", "none");
+                
+            });
+        
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+    
+        <style type="text/css">
+        
+        .square {
+                
+                width: 200px;
+                
+                height: 200px;
+                
+                float: left;
+                
+                margin: 20px;
+                
+            }
+            
+            #circle {
+                
+                width: 200px;
+                
+                height: 200px;
+                
+                float: left;
+                
+                margin: 20px;
+                
+                border-radius: 50%;
+                
+                background-color: green;
+            }
+            
+            .red {
+                
+                background-color: red;   
+                
+            }
+        
+        </style>
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+    
+    <body>
+    
+        <div id="circle"></div>
+    
+        <p>This is some text.</p>
+        
+        <p><iframe src="https://www.codestars.com"></iframe></p>
+        
+        <script type="text/javascript">
+        
+            /*
+            $("#circle").click(function() {
+                
+                //alert("a div was clicked");
+                
+                $("p").html("This text has changed!");
+                
+            });
+            
+            $("#circle").hover(function() {
+               
+                alert("Mouse is over the cirlce!");
+            });
+            */
+            
+            $("#circle").hover(function() {
+                
+                $("iframe").attr(
+                    "src", "https://www.ecowebhosting.co.uk"
+                );
+                
+            });
+            
+            
+        
+        </script>
+    </body>
+
+</html>

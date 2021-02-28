@@ -1,56 +1,4 @@
-<html>
-
-    <head>
-    
-        <title>Reaction Tester</title>
-    
-        <style type="text/css">
-        
-            h1 {
-                
-                font-size: 36px;
-                
-            }
-            
-            h3 {
-                
-                font-size: 18px;
-                font-weight: normal;
-                
-            }
-            
-            #timer-paragraph {
-                
-                font-weight: bold;
-                font-size: 18px;
-                
-            }
-        
-        </style>
-    
-    </head>
-    
-    <body>
-        
-        <div>
-        
-            <h1>Test Your Reactions!</h1>
-            
-            <h3>Click on the boxes and circles as quickly as you can!</h3>
-            
-            <p id="timer-paragraph">Your time: <span id="time"></span></p>
-        
-        </div>
-        
-        <div id="playground">
-        
-        
-        
-        </div>
-        
-        <script type="text/javascript">
-            
-            var startTime, endTime;
+var startTime, endTime;
             
             startGame();
             
@@ -136,8 +84,3 @@
                     return Math.floor(Math.random() * max) + from;
                 }
             }
-            
-        </script>
-    
-    </body>
-</html>
