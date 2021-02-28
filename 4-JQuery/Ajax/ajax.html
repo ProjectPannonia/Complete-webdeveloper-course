@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+    
+        <title>Ajax</title>
+    
+        <script type="text/javascript" src="jquery.min.js"></script>
+        
+        <style type="text/css">
+        
+        
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <p id="destination"></p>
+    
+        <script type="text/javascript">
+        
+        /*
+        $.get("info.txt", function(data) {
+           
+            alert(data);
+            
+        });
+        */
+            
+        $.ajax("info.txt").done(function(data){
+            
+            //alert(data);
+            
+            $("#destination").html(data);
+            
+        }).fail(function(){
+            
+            alert("Could not get data");  
+            
+        });
+            
+        </script>
+    
+    </body>
+</html>
