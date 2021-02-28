@@ -17,10 +17,19 @@
     <body>
     
         <script type="text/javascript">
-        
-        
             
-        
+            // g -> check globally in the string
+            // var regex = /e/g;
+            
+            // i -> case insensitive inspection
+            // var regex = /is/i;
+            var regex = /is/;
+            
+            var string ="Regex is great!";
+            
+            var result = string.match(regex);
+            
+            alert(result);
         </script>
     
     </body>
