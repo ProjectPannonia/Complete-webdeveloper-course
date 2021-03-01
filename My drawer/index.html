@@ -1,0 +1,103 @@
+<html>
+
+    <head>
+    
+        <title></title>
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+        
+        <style type="text/css">
+        
+            #newbie {
+                
+                width: 10px;
+                height: 10px;
+                background-color: yellow;
+                border: 1px solid green;
+                margin: 0px 0px 0px 0px;
+            }
+            
+            #firstInner {
+                
+                width: 10px;
+                height: 10px;
+                display: none;
+                margin: 5px 5px;
+                background-color: burlywood;
+                
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div id="newbie">
+        
+            <div id="firstInner"></div>
+            
+        </div>
+    
+        <script type="text/javascript">
+        
+            
+            
+            var increase = function() {
+                
+                var windowWidth = window.innerWidth;
+                var windowHeight = window.innerHeight;
+                
+                var actWidth = $("#newbie").width();
+                var actHeight = $("#newbie").height();
+                
+                console.log(windowWidth);
+                
+                while(actWidth <= windowWidth-30) {
+                    actWidth += 10;
+                    
+                    $("#newbie").animate({
+                        width: actWidth
+                    }, 1);
+                }
+                
+                
+                
+                while(actHeight <= windowHeight-30) {
+                    actHeight += 10;
+                    
+                    $("#newbie").animate({
+                        height: actHeight
+                    }, 1);
+                }
+                
+                console.log("Second rectangle start!");
+                
+                $("#firstInner").css("display", "block");
+                
+                var firstInnerParentWidth = (window.innerWidth) - 20;
+                var firstInnerParentHeight = $("#newbie").height();
+                
+                var firstInnerActualWidth = $("#firstInner").width();
+                var firstInnerActualHeight = $("#firstInner").height();
+                
+                while(firstInnerActualWidth <= firstInnerParentWidth-30) {
+                    firstInnerActualWidth += 10;
+                    
+                    console.log("First inner actual width: " + firstInnerActualWidth);
+                    
+                    $("#firstInner").animate({
+                        width: firstInnerActualWidth
+                    }, 1);
+                }
+                
+                console.log("Second rectangle end!");
+                
+            }
+            
+            increase();
+        
+        </script>
+    </body>
+
+</html>
