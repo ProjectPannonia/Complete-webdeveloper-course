@@ -8,9 +8,76 @@
         
         <script type="text/javascript" src="../Jquery%2520UI/jquery-ui/jquery-ui.min.js"></script>
         
+        <link rel="stylesheet" href="style/reset.css">
+        
         <style type="text/css">
         
-        
+            #topStripe {
+                
+                width: 100%;
+                height: 35px;
+                background-color: #EDEDED;
+                border-bottom: 1px solid #BFBFBF;
+                
+            }
+            
+            #binImg {
+                
+                margin-top: 4px;
+                margin-left: 7px;
+                float: left;
+                
+            }
+            
+            .topMenuButton {
+                
+                float: left;
+                font-size: 12px;
+                
+            }
+            
+            .topMenuButton:hover {
+                
+                background-color: #E4E4E4;
+                border-left: 1px solid #BFBFBF;
+                border-right: 1px solid #BFBFBF;
+                
+            }
+            
+            #fileButton {
+                
+                height: 22px;
+                width: 40px;
+                padding-top: 12px;
+                padding-left: 15px;
+                
+            }
+            
+            .topMenuButton span {
+                
+                float: left;
+                
+            }
+            
+            #downArrowImg {
+                
+                float: left;
+                padding-top: 3px;
+                padding-left: 5px;
+                
+            }
+            
+            #addLibraryButton {
+                
+                height: 22px;
+                width: 60px;
+                padding-top: 12px;
+                padding-left: 15px;
+                padding-right: 10px;
+                
+            }
+            
+            
         
         </style>
     
@@ -18,7 +85,24 @@
     
     <body>
     
+        <div id="topStripe">
+            
+            <img id="binImg" src="image/bin.png">
+            
+            <div id="fileButton" class="topMenuButton">
+            
+                <span>File</span>
+                <img id="downArrowImg"  src="image/down-arrow.png">
+                
+            </div>
+            
+            <div id= "addLibraryButton" class="topMenuButton">
+            
+                <span>Add library</span>
+                
+            </div>
         
+        </div>
     
     </body>
 
